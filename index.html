@@ -13,5 +13,154 @@
         </ul>
     </nav>
 <h1>INDEX</h1>
+    <h3>SETUP</h3>
+<dl>
+    <dt>git config --global user.name “[name]”</dt>
+
+    <dd>This command sets username, which aids in reviewing by whom the changes were made.</dd>
+
+    <dt>git config --global user.email “[email address]”</dt>
+
+    <dd>This command sets an email address, this inturn helps in tracking by whom the commit or merge activity was made.</dd>
+
+    <dt>git config --global color.ui auto</dt>
+
+    <dd>This command sets an automatic command line coloring effect for easy reviewing.</dd>
+</dl>
+
+<h3>CREATE AND INITIALIZE</h3>
+<dl>
+    <dt>git init</dt>
+
+    <dd>This command initialises the existing directory as a git repository</dd>
+
+    <dt>git init [repository name]</dt>
+
+    <dd>This command is used to create or initiate a new git repository.</dd>
+
+    <dt>git clone [url]</dt>
+
+    <dd>This command is used to obtain the entire repository or download existing source code from the URL provided. Basically makes an identical copy of the latest version of the repository in the local system.</dd>
+</dl>
+
+<h3>STAGING AND COMMIT</h3>
+<dl>
+    <dt>git add [file]</dt>
+
+    <dd>This command adds a file from the working tree to the Staging area / current branch.</dd>
+
+    <dt>git add *</dt>
+
+    <dd>This command adds one or more files from the working tree to the Staging area / current branch.</dd>
+
+    <dt>git add.</dt>
+
+    <dd>Stages all files in the entire repository to the Staging area / current branch.</dd>
+
+    <dt>git rm [file]</dt>
+
+    <dd>This command deletes the existing file from your working directory.</dd>
+
+    <dt>git status</dt>
+
+    <dd>This command lists all the files that have to be committed.</dd>
+
+    <dt>git diff</dt>
+
+    <dd>This command shows the changed contents that aren't staged.</dd>
+
+    <dt>git diff --staged </dt>
+
+    <dd>This command shows the changed contents that are staged but not committed.</dd>
+
+    <dt>git commit -m “[commit message]”</dt>
+
+    <dd>This command records or snapshots the changes permanently in the version history of the repository.</dd>
+
+    <dt>git commit -a</dt>
+
+    <dd>This command commits all the modified or created files to the repository.</dd>
+    
+    <dt>git reset [file]</dt>
+
+    <dd>This command unstage a file without any change in the working directory.</dd>
+
+    <dt>git reset [commit]</dt>
+
+    <dd>This command undoes all the commits after the specific commit mentioned and preserves the changes locally.</dd>
+
+    <dt>git reset --hard [commit]</dt>
+
+    <dd>This command discards all history and goes back to the specific commit mentioned ..</dd>
+
+</dl>
+
+<h3>BRANCH AND MERGE</h3>
+<dl>
+    <dt>git branch</dt>
+
+    <dd>This command lists the branches available in the repository.</dd>
+
+    <dt>git branch [branch name]</dt>
+
+    <dd>This command creates a new branch.</dd>
+
+    <dt>git branch -d [branch name]</dt>
+
+    <dd>This command deletes the feature branch.</dd>
+
+    <dt>git checkout [branch name]</dt>
+
+    <dd>This command is used to checkout to the branch specified.</dd>
+
+    <dt>git checkout -b [branch name]</dt>
+
+    <dd>This command creates a new branch and then checks out to the same.</dd>
+
+    <dt>git merge [branch name]</dt>
+
+    <dd>This command merges specified branches to the current branch.</dd>
+</dl>
+
+<h3>LOGS AND REVIEW</h3>
+<dl>
+    <dt>git log</dt>
+
+    <dd>This command is used to list the version history for the current branch.</dd>
+
+    <dt>git log -follow [file]</dt>
+
+    <dd>This command particularly shows the versions of the file mentioned.</dd>
+
+    <dt>git show [commit]</dt>
+
+    <dd>This command shows the content change and metadata status of the specific commit.</dd>
+</dl>
+
+<h3>REMOTE UPDATE AND SHARE</h3>
+<dl>
+    <dt>git remote add [variable name] [URL]</dt>
+
+    <dd>This command is used to connect your local repository to the remote server.</dd>
+
+    <dt>git push [variable name] [branch name]</dt>
+
+    <dd>This command sends the branch commits to your remote server</dd>
+
+    <dt>git push --set-upstream [variable name] [branch name] <b>OR</b>git push -u origin [branch name]</dt>
+
+    <dd>If branch is newly created, then we can upload with above command</dd>
+
+    <dt>git push [variable name] master</dt>
+
+    <dd>This command sends the committed changes of the master branch to your remote repository.</dd>
+
+    <dt>git push -all [variable name]</dt>
+
+    <dd>This command pushes all branches to your remote repository.</dd>
+
+    <dt>git pull [repository link]</dt>
+
+    <dd>This command fetches and merges changes on the remote server to your working directory. </dd>
 </body>
 </html>
